@@ -134,6 +134,56 @@ ul {
     font-size: 0.9rem;
 }
 
+.skills-category {
+    margin-bottom: 1.5rem;
+}
+
+.skills-category h4 {
+    color: #2c3e50;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.cert-list li {
+    background-color: #e8f5e8;
+    color: #27ae60;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border-left: 4px solid #27ae60;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.lang-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.lang-level {
+    color: #3498db;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
