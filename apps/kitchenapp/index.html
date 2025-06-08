@@ -14,30 +14,32 @@
         </nav>
         
         <main class="project-details">
-            <h1>Kitchen App</h1>
+            <h1>WIYK - What's in your Kitchen?</h1>
             <div class="project-info">
                 <section>
-                    <h2>Project Overview</h2>
-                    <p>A comprehensive kitchen management application that helps users organize recipes, track inventory, and plan meals.</p>
+                    <h2>Overview</h2>
+                    <p>WIYK helps you manage your kitchen devices, track purchases, and create presets for easy cooking and food preparation. This application streamlines your kitchen workflow, helping you save time and improve efficiency.</p>
                 </section>
                 
                 <section>
                     <h2>Features</h2>
                     <ul>
-                        <li>Recipe Management</li>
-                        <li>Inventory Tracking</li>
-                        <li>Meal Planning</li>
-                        <li>Shopping List Generation</li>
+                        <li>Device Management: Track and manage all your kitchen devices</li>
+                        <li>Purchase Statistics: View detailed statistics about your kitchen purchases</li>
+                        <li>Preset Creation: Save and apply common cooking configurations</li>
+                        <li>Multi-language Support: Available in multiple languages for global users</li>
+                        <li>Intuitive Interface: User-friendly design for easy navigation</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Technologies Used</h2>
                     <ul class="tech-stack">
-                        <li>React Native</li>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                        <li>Express</li>
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Hive</li>
+                        <li>Provider</li>
+                        <li>Firebase</li>
                     </ul>
                 </section>
 
@@ -45,63 +47,76 @@
                     <h2>App Screenshots</h2>
                     <div class="images-gallery">
                         <div class="image-item" onclick="openModal('images/menu.png', 'Main Menu')">
-                            <img src="images/fridge.png" alt="Main Menu" />
-                            <p>Main menu interface</p>
+                            <img src="images/menu.png" alt="Main Menu" />
+                            <p>Main menu interface with navigation options</p>
+                        </div>
+                        <div class="image-item" onclick="openModal('images/fridge.png', 'Fridge Overview')">
+                            <img src="images/fridge.png" alt="Fridge Overview" />
+                            <p>Virtual fridge management dashboard</p>
                         </div>
                         <div class="image-item" onclick="openModal('images/fridge_inside.png', 'Fridge Contents')">
                             <img src="images/fridge_inside.png" alt="Fridge Contents" />
-                            <p>Inside fridge view with items</p>
+                            <p>Inside fridge view with stored items</p>
+                        </div>
+                        <div class="image-item" onclick="openModal('images/fridge_menu.png', 'Fridge Menu')">
+                            <img src="images/fridge_menu.png" alt="Fridge Menu" />
+                            <p>Fridge management options and settings</p>
+                        </div>
+                        <div class="image-item" onclick="openModal('images/shoppinglist.png', 'Shopping List')">
+                            <img src="images/shoppinglist.png" alt="Shopping List" />
+                            <p>Shopping list overview and management</p>
+                        </div>
+                        <div class="image-item" onclick="openModal('images/shoppinglist_inside.png', 'Shopping List Items')">
+                            <img src="images/shoppinglist_inside.png" alt="Shopping List Items" />
+                            <p>Detailed shopping list with items</p>
+                        </div>
+                        <div class="image-item" onclick="openModal('images/shoppinglist_inside_menu.png', 'Shopping List Menu')">
+                            <img src="images/shoppinglist_inside_menu.png" alt="Shopping List Menu" />
+                            <p>Shopping list management options</p>
+                        </div>
+                        <div class="image-item" onclick="openModal('images/shoppinglist_qr.png', 'QR Code Scanner')">
+                            <img src="images/shoppinglist_qr.png" alt="QR Code Scanner" />
+                            <p>QR code scanning for quick item addition</p>
                         </div>
                         <div class="image-item" onclick="openModal('images/edit_add_item.png', 'Add/Edit Item')">
                             <img src="images/edit_add_item.png" alt="Add/Edit Item" />
                             <p>Add or edit item interface</p>
                         </div>
-                        <div class="image-item" onclick="openModal('images/fridge_menu.png', 'Fridge Menu')">
-                            <img src="images/fridge_menu.png" alt="Fridge Menu" />
-                            <p>Fridge management options</p>
-                        </div>
-                        <div class="image-item" onclick="openModal('images/shoppinglist.png', 'Shopping List')">
-                            <img src="images/shoppinglist.png" alt="Shopping List" />
-                            <p>Shopping list overview</p>
-                        </div>
-                        <div class="image-item" onclick="openModal('images/shoppinglist_inside.png', 'Shopping List Items')">
-                            <img src="images/shoppinglist_inside.png" alt="Shopping List Items" />
-                            <p>Detailed shopping list items</p>
-                        </div>
-                        <div class="image-item" onclick="openModal('images/shoppinglist_inside_menu.png', 'Shopping List Menu')">
-                            <img src="images/shoppinglist_inside_menu.png" alt="Shopping List Menu" />
-                            <p>Shopping list management menu</p>
-                        </div>
-                        <div class="image-item" onclick="openModal('images/shoppinglist_qr.png', 'QR Code Scanner')">
-                            <img src="images/shoppinglist_qr.png" alt="QR Code Scanner" />
-                            <p>QR code scanning for items</p>
-                        </div>
-                        <div class="image-item" onclick="openModal('images/fridge.png', 'Fridge Overview')">
-                            <img src="images/search.png" alt="Fridge Overview" />
-                            <p>Virtual fridge management</p>
-                        </div>
                         <div class="image-item" onclick="openModal('images/stats1.png', 'Statistics View 1')">
                             <img src="images/stats1.png" alt="Statistics View 1" />
-                            <p>Kitchen usage statistics</p>
+                            <p>Kitchen usage and purchase statistics</p>
                         </div>
                         <div class="image-item" onclick="openModal('images/stats2.png', 'Statistics View 2')">
                             <img src="images/stats2.png" alt="Statistics View 2" />
-                            <p>Food consumption analytics</p>
+                            <p>Food consumption and spending analytics</p>
                         </div>
                         <div class="image-item" onclick="openModal('images/stats3.png', 'Statistics View 3')">
                             <img src="images/stats3.png" alt="Statistics View 3" />
-                            <p>Detailed kitchen statistics</p>
-                        </div>
-                        <div class="image-item" onclick="openModal('images/menu.png', 'Main Menu')">
-                            <img src="images/menu.png" alt="Main Menu" />
-                            <p>Main menu interface</p>
+                            <p>Detailed kitchen and device statistics</p>
                         </div>
                         <div class="image-item" onclick="openModal('images/settings.png', 'Settings')">
                             <img src="images/settings.png" alt="Settings" />
-                            <p>App settings and preferences</p>
+                            <p>App settings and user preferences</p>
                         </div>
                     </div>
                 </section>
+
+                <section>
+                    <h2>Architecture</h2>
+                    <p>The app follows a clean architecture pattern with:</p>
+                    <ul>
+                        <li><strong>Providers:</strong> For state management</li>
+                        <li><strong>Models:</strong> Data structures</li>
+                        <li><strong>Screens:</strong> UI components</li>
+                        <li><strong>Widgets:</strong> Reusable UI elements</li>
+                        <li><strong>Services:</strong> Business logic and external interactions</li>
+                    </ul>
+                </section>
+
+                <footer class="project-footer">
+                    <p>Made with ❤️ by the WIYK Team</p>
+                    <p>© 2024 WIYK - What's in your Kitchen?</p>
+                </footer>
 
                 <!-- Modal for enlarged images -->
                 <div id="imageModal" class="modal" onclick="closeModal()">
