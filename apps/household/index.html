@@ -65,25 +65,33 @@
                 <section>
                     <h2>App Screenshots</h2>
                     <div class="images-gallery">
-                        <div class="image-item">
+                        <div class="image-item" onclick="openModal('images/sprouts.png', 'Sprouts Screen')">
                             <img src="images/sprouts.png" alt="Sprouts Screen" />
                             <p>Sprouts Screen Overview, with Watering, Timer, Reset and Info Icon</p>
                         </div>
-                        <div class="image-item">
+                        <div class="image-item" onclick="openModal('images/watering.png', 'Watering & Fertilize Screen')">
                             <img src="images/watering.png" alt="Watering & Fertilize Screen" />
                             <p>Watering & Fertilize Screen with Watering and Fertilize Icon</p>
                         </div>
-                        <div class="image-item">
+                        <div class="image-item" onclick="openModal('images/menu.png', 'Menu Screen')">
                             <img src="images/menu.png" alt="Menu Screen" />
                             <p>Menu Screen with Settings and About</p>
                         </div>
-                        <div class="image-item">
+                        <div class="image-item" onclick="openModal('images/settings.png', 'Setting Screen')">
                             <img src="images/settings.png" alt="Setting Screen" />
                             <p>Setting Screen to set the App language</p>
                         </div>
                     </div>
                 </section>
 
+                <!-- Modal for enlarged images -->
+                <div id="imageModal" class="modal" onclick="closeModal()">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modalImage" src="" alt="">
+                        <div id="modalCaption"></div>
+                    </div>
+                </div>
 
                 <section>
                     <h2>Supported Sprout Types</h2>
@@ -116,5 +124,28 @@
             </div>
         </main>
     </div>
+    
+    <script>
+        function openModal(imageSrc, caption) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+            modalCaption.textContent = caption;
+        }
+        
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+        
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
