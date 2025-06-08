@@ -116,11 +116,11 @@
             <section class="certificates">
                 <h3>Zertifikate</h3>
                 <ul class="cert-list">
-                    <li>Devnet Associate 1.0 (DEVASC), Cisco</li>
-                    <li>CyberOps Associate, Cisco</li>
-                    <li>CCNA 1: CCNA: Introduction to Networks, Cisco</li>
-                    <li>CCNA 2: CCNA: Switching, Routing, and Wireless Essentials, Cisco</li>
-                    <li>CCNA 3: CCNA: Enterprise Networking, Security, and Automation, Cisco</li>
+                    <li onclick="openCertModal('images/certs/devasc.jpg', 'Devnet Associate 1.0 (DEVASC)')">Devnet Associate 1.0 (DEVASC), Cisco</li>
+                    <li onclick="openCertModal('images/certs/cyberops.jpg', 'CyberOps Associate')">CyberOps Associate, Cisco</li>
+                    <li onclick="openCertModal('images/certs/ccna1.jpg', 'CCNA 1: Introduction to Networks')">CCNA 1: CCNA: Introduction to Networks, Cisco</li>
+                    <li onclick="openCertModal('images/certs/ccna2.jpg', 'CCNA 2: Switching, Routing, and Wireless Essentials')">CCNA 2: CCNA: Switching, Routing, and Wireless Essentials, Cisco</li>
+                    <li onclick="openCertModal('images/certs/ccna3.jpg', 'CCNA 3: Enterprise Networking, Security, and Automation')">CCNA 3: CCNA: Enterprise Networking, Security, and Automation, Cisco</li>
                 </ul>
             </section>
 
@@ -163,7 +163,39 @@
                     </a>
                 </div>
             </section>
+
+            <!-- Modal for certificate images -->
+            <div id="certModal" class="modal" onclick="closeCertModal()">
+                <div class="modal-content">
+                    <span class="close" onclick="closeCertModal()">&times;</span>
+                    <img id="certModalImage" src="" alt="">
+                    <div id="certModalCaption"></div>
+                </div>
+            </div>
         </main>
     </div>
+    
+    <script>
+        function openCertModal(imageSrc, caption) {
+            const modal = document.getElementById('certModal');
+            const modalImg = document.getElementById('certModalImage');
+            const modalCaption = document.getElementById('certModalCaption');
+            
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+            modalCaption.textContent = caption;
+        }
+        
+        function closeCertModal() {
+            document.getElementById('certModal').style.display = 'none';
+        }
+        
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeCertModal();
+            }
+        });
+    </script>
 </body>
 </html>

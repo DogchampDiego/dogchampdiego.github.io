@@ -156,6 +156,13 @@ ul {
     margin-bottom: 0.5rem;
     border-radius: 5px;
     border-left: 4px solid #27ae60;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cert-list li:hover {
+    background-color: #d4edda;
+    transform: translateX(5px);
 }
 
 .lang-grid {
@@ -182,6 +189,57 @@ ul {
 .lang-level {
     color: #3498db;
     font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.modal-content img {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+#certModalCaption {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 600px;
 }
 
 @media (max-width: 768px) {
