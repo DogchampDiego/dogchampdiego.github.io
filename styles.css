@@ -152,17 +152,28 @@ ul {
 .cert-list li {
     background-color: #e8f5e8;
     color: #27ae60;
-    padding: 0.5rem 1rem;
+    padding: 0;
     margin-bottom: 0.5rem;
     border-radius: 5px;
     border-left: 4px solid #27ae60;
-    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cert-list li:hover {
     background-color: #d4edda;
     transform: translateX(5px);
+}
+
+.cert-list li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cert-list li a:hover {
+    color: #1e7e34;
 }
 
 .lang-grid {
