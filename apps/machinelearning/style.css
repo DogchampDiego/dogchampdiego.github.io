@@ -1,0 +1,114 @@
+.back-nav {
+    margin-bottom: 2rem;
+}
+
+.back-nav a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details h1 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.project-info section {
+    margin-bottom: 2rem;
+}
+
+.project-info h2 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+}
+
+.cert-details h2 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+}
+
+.models-list {
+    list-style: none;
+    padding: 0;
+}
+
+.models-list li {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border-left: 4px solid #9b59b6;
+}
+
+.models-list strong {
+    color: #9b59b6;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-stack li {
+    background-color: #e8f4fd;
+    color: #2980b9;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #2980b9;
+}
+
+.cert-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cert-pdf {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-info p {
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+}
+
+.project-info ul {
+    margin-left: 1.5rem;
+}
+
+.project-info ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .project-details h1 {
+        font-size: 1.7rem;
+    }
+}
